@@ -4,6 +4,6 @@ install:
   - curl https://d3f216qdpm0le3.cloudfront.net/ubuntu-16.04-desktop-amd64.iso > ubuntu.iso
   - hdiutil convert -format UDRW -o ubuntu.img ubuntu.iso
   - curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/master/install | bash
-  - artificats --max-size 99999999999999 ubuntu.img.dmg
+  - $HOME/bin/artificats --max-size 99999999999999 ubuntu.img.dmg
 addons:
   artifacts: true
