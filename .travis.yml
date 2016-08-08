@@ -1,7 +1,7 @@
 os: osx
 sudo: required
 install:
-  - curl https://d3f216qdpm0le3.cloudfront.net/ubuntu-16.04-desktop-amd64.iso > ubuntu.iso
+  - curl http://mirror.vorboss.net/ubuntu-releases/16.04.1/ubuntu-16.04.1-desktop-amd64.iso > ubuntu.iso
   - hdiutil convert -format UDRW -o ubuntu.img ubuntu.iso
   - curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/master/install | bash
   - $HOME/bin/artifacts upload --max-size 99999999999999 ubuntu.img.dmg
